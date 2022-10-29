@@ -1,5 +1,7 @@
 <!-- 
-  TODO: bikin responsive
+  TODO: masukin API nya
+  TODO: benerin style dikit (low priority)
+  TODO: bikin random background color pakek javascript (low priority)
 -->
 
 <!DOCTYPE html>
@@ -17,9 +19,9 @@
   <body class="bg-slate-100">
     <!-- Navbar -->
     <section id="header">
-      <nav class="container box-border flex p-4">
+      <nav class="container mx-auto box-border flex max-w-2xl p-4">
         <!-- Logo Github -->
-        <div class="logo-github mr-3 self-center">
+        <div class="logo-github mr-3 self-center sm:mr-4">
           <a href="" target="_blank">
             <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="h-12 w-12">
               <path
@@ -39,12 +41,12 @@
 
     <!-- * Card buat nampilin Profile yang udah di-generate -->
     <section id="konten">
-      <main class="card container mt-4 box-border bg-slate-400/60 py-2 px-4">
+      <main class="container mx-auto mt-4 box-border max-w-lg rounded-lg bg-slate-400/60 py-2 px-4 sm:shadow-md">
         <!-- Profile -->
         <div class="profile">
           <!-- Profile Picture -->
           <div class="picture mb-2">
-            <img src="src/img/pp.jpg" alt="" class="rounded-full" />
+            <img src="src/img/pp.jpg" alt="" class="rounded-full border-4 border-white" />
           </div>
           <!-- Profile Picture -->
 
@@ -74,7 +76,7 @@
 
         <!-- Button Buat Generate Profile Baru -->
         <div class="new-profile mt-4">
-          <button class="w-full rounded-lg bg-transparent p-2 text-lg font-semibold ring ring-slate-800 sm:hover:bg-slate-800 sm:hover:text-white">Generate New User</button>
+          <button class="w-full rounded bg-transparent p-2 text-lg font-semibold ring ring-slate-800 sm:hover:bg-slate-800 sm:hover:text-white">Generate New User</button>
         </div>
         <!-- Button Buat Generate Profile Baru -->
       </main>
