@@ -1,5 +1,4 @@
 <!-- 
-  TODO: masukin API nya
   TODO: benerin style dikit (low priority)
   TODO: bikin random background color pakek javascript (low priority)
 -->
@@ -14,7 +13,7 @@
 
     <!-- Link CSS -->
     <!-- <link rel="stylesheet" href="src/css/style.css" /> -->
-    <link rel="stylesheet" href="dist/final.css" />
+    <link rel="stylesheet" href="dist/css/final.css" />
   </head>
   <body class="bg-slate-100">
     <!-- Navbar -->
@@ -46,7 +45,8 @@
         <div class="profile">
           <!-- Profile Picture -->
           <div class="picture mb-2">
-            <img src="src/img/pp.jpg" alt="" class="rounded-full border-4 border-white" />
+            <img src="" alt="" id="gambar" class="rounded-full border-4 border-white" />
+            <!-- atribut src di generate pakek JS-->
           </div>
           <!-- Profile Picture -->
 
@@ -54,19 +54,22 @@
           <div class="details">
             <!-- Profile Name -->
             <div class="profile-name">
-              <h3 class="text-2xl font-bold">Tukul Perkotakan</h3>
+              <h3 id="nama" class="text-2xl font-bold"></h3>
+              <!-- Nama di generate pakek JS -->
             </div>
             <!-- Profile Name -->
 
             <!-- Profile Location -->
             <div class="profile-location">
-              <h3 class="text-lg font-semibold">City, State, Country</h3>
+              <h3 id="lokasi" class="text-lg font-semibold"></h3>
+              <!-- City, State, Country di generate pakek JS -->
             </div>
             <!-- Profile Location -->
 
             <!-- Profile Email -->
             <div class="profile-email">
-              <h3 class="text-lg font-semibold">asadasdsada@asdsaas.com</h3>
+              <h3 id="email" class="text-lg font-semibold"></h3>
+              <!-- Email di generate pakek JS -->
             </div>
             <!-- Profile Email -->
           </div>
@@ -82,5 +85,9 @@
       </main>
     </section>
     <!-- * Card buat nampilin Profile yang udah di-generate -->
+
+    <!-- Script JS -->
+    <script src="dist/js/script.js" type="module"></script>
+    <!-- Script JS -->
   </body>
 </html>
