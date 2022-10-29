@@ -1,11 +1,11 @@
 {
   "name": "fake-user-generator",
-  "version": "1.0.0",
+  "version": "1.5.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "gas": "npx tailwindcss -i ./src/css/input.css -o ./src/css/style.css --watch",
-    "minify": "npx tailwindcss -i ./src/css/input.css -o ./dist/final.css --minify"
+    "minify": "npx tailwindcss -i ./src/css/input.css -o ./dist/css/final.css --minify"
   },
   "keywords": [],
   "author": "",
