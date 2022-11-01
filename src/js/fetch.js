@@ -1,13 +1,11 @@
 export const generateUser = () => {
-  const link = "https://randomuser.me/api/";
-
   // * Element HTML
   const gambar = document.getElementById("gambar");
   const nama = document.getElementById("nama");
   const lokasi = document.getElementById("lokasi");
   const email = document.getElementById("email");
 
-  return fetch(link)
+  fetch("https://randomuser.me/api/")
     .then((respon) => respon.json())
     .then((hasil) => {
       gambar.setAttribute("src", `${hasil.results[0].picture.large}`);
